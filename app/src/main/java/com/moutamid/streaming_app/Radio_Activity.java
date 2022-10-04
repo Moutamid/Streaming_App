@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,6 +20,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class Radio_Activity extends AppCompatActivity {
+
+    FloatingActionButton fab_channel;
 
     RecyclerView mOnline_Recycler;
     ArrayList<Model_Radio> modelOnlines_list;
@@ -36,6 +39,15 @@ public class Radio_Activity extends AppCompatActivity {
         pd.setCanceledOnTouchOutside(true);
         mOnline_Recycler = findViewById(R.id.recyclerView_radio);
 
+        fab_channel = findViewById(R.id.fab_channel2);
+        fab_channel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Radio_Activity.this , Radio_List.class);
+                startActivity(intent);
+            }
+        });
+
         GridLayoutManager gridLayoutManager = new GridLayoutManager(Radio_Activity.this , 2);
         mOnline_Recycler.setLayoutManager(gridLayoutManager);
 
@@ -43,7 +55,7 @@ public class Radio_Activity extends AppCompatActivity {
         Adapter_Radio adapter_online = new Adapter_Radio(Radio_Activity.this , modelOnlines_list);
         mOnline_Recycler.setAdapter(adapter_online);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Radio");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Radio_app2");
         pd.show();
 
         databaseReference.addValueEventListener(new ValueEventListener() {

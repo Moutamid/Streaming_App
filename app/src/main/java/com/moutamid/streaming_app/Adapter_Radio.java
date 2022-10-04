@@ -61,6 +61,13 @@ public class Adapter_Radio extends RecyclerView.Adapter<Adapter_Radio.HolderAndr
             }
         });
 
+        if (position % 2 == 0){
+            holder.view_top.setVisibility(View.VISIBLE);
+        }
+        else {
+            holder.view_top.setVisibility(View.GONE);
+        }
+
         if (Stash.getBoolean(position+""))
             holder.btn_fav2.setImageResource(R.drawable.ic_baseline_favorite_24);
         else holder.btn_fav2.setImageResource(R.drawable.ic_baseline_favorite_border_24);
@@ -114,6 +121,7 @@ public class Adapter_Radio extends RecyclerView.Adapter<Adapter_Radio.HolderAndr
         private ImageView btn_fav2 ;
         private ImageView btn_fav_done2 ;
         private CardView card_channel;
+        private View view_top;
 
         HolderAndroid(@NonNull View itemView) {
             super(itemView);
@@ -124,6 +132,7 @@ public class Adapter_Radio extends RecyclerView.Adapter<Adapter_Radio.HolderAndr
             name = itemView.findViewById(R.id.title_radio);
             link = itemView.findViewById(R.id.link_radio);
             card_channel = itemView.findViewById(R.id.card_radio);
+            view_top = itemView.findViewById(R.id.view_top);
         }
     }
 }

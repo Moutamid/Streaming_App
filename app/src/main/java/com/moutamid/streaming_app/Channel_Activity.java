@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 
 public class Channel_Activity extends AppCompatActivity {
 
+    FloatingActionButton fab_channel;
 
     RecyclerView mOnline_Recycler;
     ArrayList<Model_Channel> modelOnlines_list;
@@ -37,6 +39,14 @@ public class Channel_Activity extends AppCompatActivity {
         pd.setCanceledOnTouchOutside(true);
         mOnline_Recycler = findViewById(R.id.recyclerView_channel);
 
+        fab_channel = findViewById(R.id.fab_channel);
+        fab_channel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Channel_Activity.this , Channel_List.class);
+                startActivity(intent);
+            }
+        });
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(Channel_Activity.this , 1);
         mOnline_Recycler.setLayoutManager(gridLayoutManager);
@@ -45,7 +55,7 @@ public class Channel_Activity extends AppCompatActivity {
         Adapter_Channel adapter_online = new Adapter_Channel(Channel_Activity.this , modelOnlines_list);
         mOnline_Recycler.setAdapter(adapter_online);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Channels");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Channels_app2");
         pd.show();
 
         databaseReference.addValueEventListener(new ValueEventListener() {

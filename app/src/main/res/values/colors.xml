@@ -13,5 +13,6 @@
     <color name="text_gray">#808080</color>
     <color name="gray">#ECEAEA</color>
     <color name="blue">#00BCD4</color>
-    <color name="green">#4CAF50</color>
+    <color name="green">#ffdf2b</color>
+    <color name="yellow">#ffdf2b</color>
 </resources>
