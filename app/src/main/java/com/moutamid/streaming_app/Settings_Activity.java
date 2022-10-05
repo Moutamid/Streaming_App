@@ -86,6 +86,8 @@ public class Settings_Activity extends AppCompatActivity {
                         "Arabic",
                         "Deutsch",
                         "Turkish",
+                        "Russian",
+                        "Spanish",
                 };
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(Settings_Activity.this);
                 mBuilder.setTitle("Choose an item");

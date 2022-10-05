@@ -46,7 +46,7 @@
 
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
+                            android:layout_height="130dp"
                             android:background="@color/white"
                             android:src="@drawable/cahnnel_gif"/>
 
@@ -103,19 +103,19 @@
 
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
+                            android:layout_height="130dp"
                             android:background="@color/white"
-                            android:src="@drawable/radio_gif"/>
+                            android:src="@drawable/radio_gif" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:textColor="@color/yellow"
-                            android:textSize="20sp"
-                            android:drawableLeft="@drawable/ic_baseline_circle_24"
                             android:layout_margin="5dp"
-                            android:text="Live Radio"/>
+                            android:drawableLeft="@drawable/ic_baseline_circle_24"
+                            android:gravity="center"
+                            android:text="Live Radio"
+                            android:textColor="@color/yellow"
+                            android:textSize="20sp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -266,7 +266,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5dp"
                                 android:gravity="center"
-                                android:text="Feedback"
+                                android:text="Policy/Terms"
                                 android:textColor="@color/yellow"
                                 android:textSize="15sp" />
                         </LinearLayout>

@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:loopCount="1"
-        android:src="@drawable/splash_gif_stream" />
+        android:scaleType="fitXY"
+        android:src="@drawable/uk_splash" />
 
 </RelativeLayout>
