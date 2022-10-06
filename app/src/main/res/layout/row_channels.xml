@@ -29,7 +29,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center"
                     app:cardBackgroundColor="@color/white"
                     app:cardElevation="10dp"
@@ -57,7 +57,7 @@
                         android:gravity="center"
                         android:textColor="@color/green"
                         android:textStyle="bold"
-                        android:textSize="18sp"/>
+                        android:textSize="16sp"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -115,10 +115,8 @@
                                 android:layout_below="@+id/notification_layout"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginStart="10dp"
-                                android:layout_marginTop="10dp"
                                 android:layout_marginEnd="10dp"
                                 android:visibility="visible"
-                                android:layout_marginBottom="10dp"
                                 android:background="@drawable/shape_appclr2"
                                 android:src="@drawable/ic_baseline_favorite_border_24" />
 
