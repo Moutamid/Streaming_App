@@ -54,7 +54,6 @@ public class VedioActivity extends AppCompatActivity {
             name.setText(bundle.getString("name"));
         }
 
-
         String link_text = link.getText().toString().trim();
         String name_text = name.getText().toString().trim();
 
