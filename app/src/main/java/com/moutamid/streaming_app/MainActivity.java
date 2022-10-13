@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
         report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:to@gmail.com")));
+                startActivity(new Intent(Intent.ACTION_SENDTO, Uri.parse("alfidasaldana@gmail.com")));
             }
         });
 
