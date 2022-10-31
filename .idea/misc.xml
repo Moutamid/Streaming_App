@@ -4,7 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/drawable/transparent_img.xml" value="0.1885" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_add_channel.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_add_radio.xml" value="0.2338568935427574" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_channel.xml" value="0.2258426966292135" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_channel_list.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_edit_channel.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_edit_radio.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_favorities.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_music.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_radio.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_radio_list.xml" value="0.209375" />
+        <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_settings.xml" value="0.209375" />
         <entry key="..\:/BridgeLinxProject/UK_TV/app/src/main/res/layout/activity_vedio.xml" value="0.209375" />
         <entry key="..\:/New folder/Bridgetlinx/Streaming_App/app/src/main/res/layout/activity_main.xml" value="0.14266304347826086" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.125" />
