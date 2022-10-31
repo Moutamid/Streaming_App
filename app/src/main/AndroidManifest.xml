@@ -9,6 +9,7 @@
     <application
         android:name=".AppContext"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -18,39 +19,51 @@
         android:theme="@style/Theme.Streaming_App"
         tools:targetApi="31">
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Edit_Radio"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Edit_Channel"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Radio_List"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Channel_List"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Add_Radio"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Add_Channel"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Radio_Activity"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Channel_Activity"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Favorities"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Settings_Activity"
             android:exported="false" />
         <activity
+            android:hardwareAccelerated="true"
             android:name=".MusicActivity"
             android:exported="false" />
         <activity
@@ -67,6 +80,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_ad_id"/>
+
     </application>
 
 </manifest>
